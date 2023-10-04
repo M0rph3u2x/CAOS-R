@@ -1,0 +1,27 @@
+Package: caosR
+Title: CAOS-R (Character Attribute Organization Software)
+Version: 1.0.0.0001
+Authors@R: 
+    person("Tjard", "Bergmann", , "tjard.bergmann@tiho-hannover.de", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: CAOS-R identifys diagnostic characters in a given dataset. The diagnostic database
+             that the CAOS-R-Barcoder creates can be used to identify unclassified data with the
+             CAOS-R-Classifier.
+License: CC-BY-4.0
+    license
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports: 
+    ape,
+    berryFunctions,
+    dplyr,
+    geiger,
+    igraph,
+    phangorn,
+    phytools,
+    readxl,
+    rstudioapi,
+    stringr,
+    tidyr,
+    writexl
