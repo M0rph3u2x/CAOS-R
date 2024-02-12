@@ -5,12 +5,13 @@
 #'
 #' @param bh Best hit
 #' @param ref_data Reference data
+#' @param marker_data Marker data
 #'
 #' @return Return best hit data
 #' @export
 #'
-#' @examples get_bh_ref_data(bh, ref_data)
-get_bh_ref_data <- function(bh, ref_data){
+#' @examples get_bh_ref_data(bh, ref_data,marker_data)
+get_bh_ref_data <- function(bh, ref_data,marker_data){
   #Get position of best hit (bh)
   bh_data_pos <- grepl(bh, ref_data[[1]])
   bh_list     <- list() #Create list with reference marker data

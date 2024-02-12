@@ -4,12 +4,14 @@
 \alias{get_bh_ref_data}
 \title{Title Create list with reference marker data}
 \usage{
-get_bh_ref_data(bh, ref_data)
+get_bh_ref_data(bh, ref_data, marker_data)
 }
 \arguments{
 \item{bh}{Best hit}
 
 \item{ref_data}{Reference data}
+
+\item{marker_data}{Marker data}
 }
 \value{
 Return best hit data
@@ -18,5 +20,5 @@ Return best hit data
 Title Create list with reference marker data
 }
 \examples{
-get_bh_ref_data(bh, ref_data)
+get_bh_ref_data(bh, ref_data,marker_data)
 }

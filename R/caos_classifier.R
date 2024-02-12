@@ -119,7 +119,7 @@ caos_classifier <- function(){
     query_list <- create_query_list(query)
 
     #Score all query files with reference barcodes
-    hit_score <- compare_barcodes_vs_query(node_pos,marker_data,ref_node,input.path,out.path,query_list,marker_priority)
+    hit_score <- compare_barcodes_vs_query(query_nr,node_pos,marker_data,ref_node,input.path,out.path,query_data,query_list,marker_priority)
 
     #-----------------------------------------------------------------------------
 
@@ -141,12 +141,12 @@ caos_classifier <- function(){
     leading_taxa <- find_best_hits(hit_score,ref_taxa_data,unique_ref_taxa_data)
 
     #Save and print best hits per query
-    best_hits <- print_best_hits(query_data,leading_taxa,best_hits,out.path)
+    best_hits <- print_best_hits(query_nr,query_data,leading_taxa,best_hits,out.path)
 
     #-----------------------------------------------------------------------------
 
     #5c) Align query and best hit references
-    align_query_and_bh_refs(best_hits,ref_data,marker_data,query_list)
+    align_query_and_bh_refs(query_nr,best_hits,ref_data,marker_data,query_list,out.path)
 
   }
 

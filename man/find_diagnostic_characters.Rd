@@ -8,6 +8,7 @@ find_diagnostic_characters(
   tree.nr,
   nodes.tree,
   all.branch.names,
+  caos.path,
   CAOS,
   empty_row,
   overview.path
@@ -19,6 +20,8 @@ find_diagnostic_characters(
 \item{nodes.tree}{Tree nodes}
 
 \item{all.branch.names}{All branch names}
+
+\item{caos.path}{Path to CAOS file}
 
 \item{CAOS}{CAOS sorted list of all processed input data}
 
@@ -33,5 +36,5 @@ Return tables with diagnostic characters
 Title Identify diagnostic characters
 }
 \examples{
-find_diagnostic_characters(tree.nr,nodes.tree,all.branch.names,CAOS,empty_row,overview.path)
+find_diagnostic_characters(tree.nr,nodes.tree,all.branch.names,caos.path,CAOS,empty_row,overview.path)
 }

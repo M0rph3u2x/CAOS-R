@@ -5,16 +5,20 @@
 \title{Title Compare barcodes with query data}
 \usage{
 compare_barcodes_vs_query(
+  query_nr,
   node_pos,
   marker_data,
   ref_node,
   input.path,
   out.path,
+  query_data,
   query_list,
   marker_priority
 )
 }
 \arguments{
+\item{query_nr}{Query number (ID)}
+
 \item{node_pos}{Node position}
 
 \item{marker_data}{Marker data}
@@ -24,6 +28,8 @@ compare_barcodes_vs_query(
 \item{input.path}{Input path}
 
 \item{out.path}{Output path}
+
+\item{query_data}{Query data}
 
 \item{query_list}{Query list}
 
@@ -36,5 +42,5 @@ Save hit score, filtered hit score, score overview and filtered score overview
 Title Compare barcodes with query data
 }
 \examples{
-compare_barcodes_vs_query(node_pos,marker_data,ref_node,input.path,out.path,query_list,marker_priority)
+compare_barcodes_vs_query(query_nr,node_pos,marker_data,ref_node,input.path,out.path,query_data,query_list,marker_priority)
 }

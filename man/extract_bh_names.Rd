@@ -4,9 +4,11 @@
 \alias{extract_bh_names}
 \title{Title Extract best hit (bh) names}
 \usage{
-extract_bh_names(best_hits)
+extract_bh_names(query_nr, best_hits)
 }
 \arguments{
+\item{query_nr}{Query number (ID)}
+
 \item{best_hits}{Best hits}
 }
 \value{
@@ -16,5 +18,5 @@ Best hit names
 Title Extract best hit (bh) names
 }
 \examples{
-extract_bh_names(best_hits)
+extract_bh_names(query_nr,best_hits)
 }

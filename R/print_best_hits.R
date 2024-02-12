@@ -1,6 +1,7 @@
 #Classifier: Save and print best hits per query --------------------------------------------
 #' Title Save and print best hits per query
 #'
+#' @param query_nr Query number (ID)
 #' @param query_data Query data
 #' @param leading_taxa Leading taxa
 #' @param best_hits Best hit data
@@ -9,8 +10,8 @@
 #' @return Best hits per query
 #' @export
 #'
-#' @examples print_best_hits(query_data,leading_taxa,best_hits,out.path)
-print_best_hits <- function(query_data,leading_taxa,best_hits,out.path){
+#' @examples print_best_hits(query_nr,query_data,leading_taxa,best_hits,out.path)
+print_best_hits <- function(query_nr,query_data,leading_taxa,best_hits,out.path){
 
   #Get query name
   query_name <- gsub("[>]","",query_data$taxa[query_nr])

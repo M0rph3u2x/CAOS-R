@@ -6,6 +6,7 @@
 #' @param tree.nr Tree number
 #' @param nodes.tree Tree nodes
 #' @param all.branch.names All branch names
+#' @param caos.path Path to CAOS file
 #' @param CAOS CAOS sorted list of all processed input data
 #' @param empty_row Placeholder positions to separate branch data
 #' @param overview.path Overview path
@@ -13,8 +14,8 @@
 #' @return Return tables with diagnostic characters
 #' @export
 #'
-#' @examples find_diagnostic_characters(tree.nr,nodes.tree,all.branch.names,CAOS,empty_row,overview.path)
-find_diagnostic_characters <- function(tree.nr,nodes.tree,all.branch.names,CAOS,empty_row,overview.path){
+#' @examples find_diagnostic_characters(tree.nr,nodes.tree,all.branch.names,caos.path,CAOS,empty_row,overview.path)
+find_diagnostic_characters <- function(tree.nr,nodes.tree,all.branch.names,caos.path,CAOS,empty_row,overview.path){
 
   #Parameters:
   All_CA_Overview <- data.frame(Diagnostic_Positions      = integer(),

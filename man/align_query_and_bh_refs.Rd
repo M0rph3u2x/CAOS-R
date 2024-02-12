@@ -4,9 +4,18 @@
 \alias{align_query_and_bh_refs}
 \title{Title Align query and best hit references}
 \usage{
-align_query_and_bh_refs(best_hits, ref_data, marker_data, query_list)
+align_query_and_bh_refs(
+  query_nr,
+  best_hits,
+  ref_data,
+  marker_data,
+  query_list,
+  out.path
+)
 }
 \arguments{
+\item{query_nr}{Query number (ID)}
+
 \item{best_hits}{List of best hit data}
 
 \item{ref_data}{List of reference data}
@@ -14,6 +23,8 @@ align_query_and_bh_refs(best_hits, ref_data, marker_data, query_list)
 \item{marker_data}{List of markers}
 
 \item{query_list}{List of query data}
+
+\item{out.path}{Output path}
 }
 \value{
 Creates table of aligned query and best hit references
@@ -22,6 +33,6 @@ Creates table of aligned query and best hit references
 Title Align query and best hit references
 }
 \examples{
-align_query_and_bh_refs(best_hits,ref_data,marker_data,query_list)
+align_query_and_bh_refs(query_nr,best_hits,ref_data,marker_data,query_list,out.path)
 
 }

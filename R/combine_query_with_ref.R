@@ -18,7 +18,17 @@ combine_query_with_ref <- function(bh_list,query_list,bh,marker_data,align){
   Align_table <- c()
   Align_ID    <- 1
   for(align_id in 1:length(bh_list)){#align_id<-3
-    Align_table[Align_ID] <- paste("Query: ",gsub(">","",query_list[[1]]), "; Best Hit: ", bh, "; Marker:", marker_data[align_id], sep="")
+
+    pattern <- paste(align[[align_id]], collapse="")
+    pattern <- strsplit(pattern, split="")
+    if((pattern=="|")==FALSE){
+      pattern <- pattern[[1]]
+    }
+    maxPos  <- length(which(pattern=="|" | pattern=="-"))
+    match   <- length(which(pattern=="|"))
+    perc    <- (100/maxPos)*match
+
+    Align_table[Align_ID] <- paste("Query: ",gsub(">","",query_list[[1]]), "; Best Hit: ", bh, "; Marker:", marker_data[align_id], "; Match (%):", perc, sep="")
     Align_ID <- Align_ID+1
     query_align <- query_list[[align_id+1]]
     align_align <- align[[align_id]]

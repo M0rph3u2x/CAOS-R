@@ -280,6 +280,7 @@ caos_barcoder <- function(){
       find_diagnostic_characters(tree.nr,
                                  nodes.tree,
                                  all.branch.names,
+                                 caos.path,
                                  CAOS,
                                  empty_row,
                                  overview.path)

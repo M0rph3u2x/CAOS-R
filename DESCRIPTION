@@ -1,9 +1,9 @@
 Package: caosR
 Title: CAOS-R (Character Attribute Organization Software)
-Version: 1.0.0.0001
+Version: 1.0.0.0015
 Authors@R: 
     person("Tjard", "Bergmann", , "tjard.bergmann@tiho-hannover.de", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
+           comment = c(ORCID = "0000-0002-5292-6193"))
 Description: CAOS-R identifys diagnostic characters in a given dataset. The diagnostic database
              that the CAOS-R-Barcoder creates can be used to identify unclassified data with the
              CAOS-R-Classifier.

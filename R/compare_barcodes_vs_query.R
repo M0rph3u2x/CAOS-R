@@ -2,19 +2,21 @@
 
 #' Title Compare barcodes with query data
 #'
+#' @param query_nr Query number (ID)
 #' @param node_pos Node position
 #' @param marker_data Marker data
 #' @param ref_node Reference node
 #' @param input.path Input path
 #' @param out.path Output path
+#' @param query_data Query data
 #' @param query_list Query list
 #' @param marker_priority Marker priority
 #'
 #' @return Save hit score, filtered hit score, score overview and filtered score overview
 #' @export
 #'
-#' @examples compare_barcodes_vs_query(node_pos,marker_data,ref_node,input.path,out.path,query_list,marker_priority)
-compare_barcodes_vs_query <- function(node_pos,marker_data,ref_node,input.path,out.path,query_list,marker_priority){
+#' @examples compare_barcodes_vs_query(query_nr,node_pos,marker_data,ref_node,input.path,out.path,query_data,query_list,marker_priority)
+compare_barcodes_vs_query <- function(query_nr,node_pos,marker_data,ref_node,input.path,out.path,query_data,query_list,marker_priority){
 
   #Define dataframes and vectors -----------------------------------------------
 

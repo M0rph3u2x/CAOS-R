@@ -4,9 +4,11 @@
 \alias{print_best_hits}
 \title{Title Save and print best hits per query}
 \usage{
-print_best_hits(query_data, leading_taxa, best_hits, out.path)
+print_best_hits(query_nr, query_data, leading_taxa, best_hits, out.path)
 }
 \arguments{
+\item{query_nr}{Query number (ID)}
+
 \item{query_data}{Query data}
 
 \item{leading_taxa}{Leading taxa}
@@ -22,5 +24,5 @@ Best hits per query
 Title Save and print best hits per query
 }
 \examples{
-print_best_hits(query_data,leading_taxa,best_hits,out.path)
+print_best_hits(query_nr,query_data,leading_taxa,best_hits,out.path)
 }
