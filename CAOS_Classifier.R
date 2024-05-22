@@ -116,6 +116,6 @@ pacman::p_load(caosR) #All functions written for CAOS Barcoder and Classifier
 
 #4) Run CAOS-Barcoder ----------------------------------------------------------
 
-caos_barcoder()
+caos_classifier()
 
 #-------------------------------------------------------------------------------
